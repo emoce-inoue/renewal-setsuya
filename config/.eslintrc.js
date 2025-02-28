@@ -1,5 +1,6 @@
 module.exports = {
   extends: ['eslint:recommended', 'plugin:prettier/recommended'],
+  ignorePatterns: ['webpack.config.js'],
   env: {
     browser: true,
     node: true,
