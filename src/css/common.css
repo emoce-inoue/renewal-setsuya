@@ -54,7 +54,7 @@
   justify-content: center;
   inline-size: 40px;
   aspect-ratio: 1;
-  background-color: var(--color-bluescale-200);
+  background-color: var(--color-bluescale-500);
 }
 
 .l-drawer__close-button {
@@ -90,7 +90,7 @@
   inline-size: 100%;
   padding: 14px 23px;
   border-block-end: 1px solid var(--color-grayscale-100);
-  color: var(--color-bluescale-200);
+  color: var(--color-bluescale-500);
 }
 
 .l-drawer__menu-link::after {
@@ -112,7 +112,7 @@
   grid-template-columns: 1fr auto 1fr;
   column-gap: 1cap;
   align-items: center;
-  color: var(--color-bluescale-200);
+  color: var(--color-bluescale-500);
   font-size: calc(13 * var(--rem-ratio));
 }
 
@@ -147,7 +147,7 @@
 .l-drawer__copy {
   inline-size: fit-content;
   margin-inline: auto;
-  color: var(--color-bluescale-200);
+  color: var(--color-bluescale-500);
   font-size: calc(10 * var(--rem-ratio));
   font-weight: var(--font-medium);
 }
@@ -159,7 +159,7 @@
   justify-content: center;
   inline-size: 40px;
   aspect-ratio: 1;
-  background-color: var(--color-bluescale-200);
+  background-color: var(--color-bluescale-500);
 }
 
 .l-hamburger {
@@ -220,7 +220,7 @@
   }
 
   .l-header__menu-link {
-    color: var(--color-bluescale-200);
+    color: var(--color-bluescale-500);
     font-size: calc(14 * var(--rem-ratio));
   }
 
