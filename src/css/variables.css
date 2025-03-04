@@ -17,15 +17,15 @@
   --layout-width-max: 1440;
   --fluid-ratio-min: calc(1 / var(--layout-width-min) * 100dvi);
   --fluid-ratio-max: calc(1 / var(--layout-width-max) * 100dvi);
-  --8space: 8px;
-  --16space: 16px;
-  --24space: 24px;
-  --32space: 32px;
-  --40space: 40px;
-  --48space: 48px;
-  --56space: 56px;
-  --64space: 64px;
-  --72space: 72px;
+  --space-8: 8px;
+  --space-16: 16px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-40: 40px;
+  --space-48: 48px;
+  --space-56: 56px;
+  --space-64: 64px;
+  --space-72: 72px;
   --aspect-video: 16/9;
   --aspect-thumbnail: 1.91/1;
   --rounded-s: 7.3px;
@@ -38,8 +38,8 @@
   --color-grayscale-0: #fff;
   --color-grayscale-100: #e8e8e8;
   --color-grayscale-1000: #000;
-  --color-bluescale-100: #ECF9FF;
-  --color-bluescale-150: #E2F7FF;
+  --color-bluescale-100: #ecf9ff;
+  --color-bluescale-150: #e2f7ff;
   --color-bluescale-200: #c6efff;
   --color-bluescale-300: #a3cbdb;
   --color-bluescale-400: #1d65b3;
@@ -52,7 +52,7 @@
   --color-shadow-black: rgb(0 0 0 / 25%);
   --background-base: var(--color-bluescale-100);
   --background-simulation: repeating-linear-gradient(-45deg, var(--color-yellowscale-200), var(--color-yellowscale-200) 5px, var(--color-yellowscale-100) 5px, var(--color-yellowscale-100) 10px);
-  --mordal-overlay: rgb(198 239 255 / .54);
+  --mordal-overlay: rgb(198 239 255 / 54%);
   --font-base: var(--color-bluescale-500);
   --underline-base: color-mix(in srgb, currentcolor, transparent 40%);
 

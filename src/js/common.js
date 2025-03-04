@@ -110,7 +110,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // modal
   const modal = document.getElementById('modal');
   const modalInner = document.querySelector('.l-modal__inner');
-  const closeButton = document.querySelector('.l-modal__close');
   const modalTriggers = document.querySelectorAll('.js-modal-trigger');
   const isPC = () => window.matchMedia('(min-width: 768px)').matches;
   // モーダルを開く
@@ -120,9 +119,9 @@ document.addEventListener('DOMContentLoaded', () => {
       modal.style.display = 'flex';
     }
   };
-  modalTriggers.forEach(trigger => trigger.addEventListener('click', openModal));
+  modalTriggers.forEach((trigger) => trigger.addEventListener('click', openModal));
   // モーダルを閉じる関数
-  const closeModal = () => modal.style.display = 'none';
+  const closeModal = () => (modal.style.display = 'none');
   modal.addEventListener('click', (event) => {
     if (!modalInner.contains(event.target) || event.target.closest('.l-modal__close')) {
       closeModal();
@@ -133,7 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const pageTopButton = document.querySelector('.l-page-top__button');
   if (pageTopButton) {
     pageTopButton.addEventListener('click', () => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   }
 });
