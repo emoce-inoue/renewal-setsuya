@@ -7,7 +7,8 @@
   --font-normal: 400;
   --font-medium: 500;
   --font-bold: 700;
-  --leading-initial: 1.43;
+  --leading-tight: 1;
+  --leading-slim: 1.43;
   --leading-normal: 1.6;
   --tracking-normal: 0.02em;
 
@@ -16,27 +17,43 @@
   --layout-width-max: 1440;
   --fluid-ratio-min: calc(1 / var(--layout-width-min) * 100dvi);
   --fluid-ratio-max: calc(1 / var(--layout-width-max) * 100dvi);
+  --8space: 8px;
+  --16space: 16px;
+  --24space: 24px;
+  --32space: 32px;
+  --40space: 40px;
+  --48space: 48px;
+  --56space: 56px;
+  --64space: 64px;
+  --72space: 72px;
   --aspect-video: 16/9;
   --aspect-thumbnail: 1.91/1;
   --rounded-s: 7.3px;
   --rounded-m: 8px;
   --rounded-l: 12px;
-  --rounded-xl: 38px;
+  --rounded-xl: 28px;
+  --rounded-infinity: calc(infinity * 1px);
 
   /* color */
   --color-grayscale-0: #fff;
   --color-grayscale-100: #e8e8e8;
   --color-grayscale-1000: #000;
-  --color-bluescale-100: #e2f7ff;
+  --color-bluescale-100: #ECF9FF;
+  --color-bluescale-150: #E2F7FF;
   --color-bluescale-200: #c6efff;
   --color-bluescale-300: #a3cbdb;
   --color-bluescale-400: #1d65b3;
   --color-bluescale-500: #002769;
   --color-orangescale-100: #ff8438;
   --color-redscale-100: #e11314;
-  --color-yellowscale-100: #fff1ac;
+  --color-pinkscale-100: #f9cfd0;
+  --color-yellowscale-100: #fff6cc;
+  --color-yellowscale-200: #fff1ac;
+  --color-shadow-black: rgb(0 0 0 / 25%);
   --background-base: var(--color-bluescale-100);
-  --font-base: var(--color-bluescale-300);
+  --background-simulation: repeating-linear-gradient(-45deg, var(--color-yellowscale-200), var(--color-yellowscale-200) 5px, var(--color-yellowscale-100) 5px, var(--color-yellowscale-100) 10px);
+  --mordal-overlay: rgb(198 239 255 / .54);
+  --font-base: var(--color-bluescale-500);
   --underline-base: color-mix(in srgb, currentcolor, transparent 40%);
 
   /* z-index */
@@ -47,7 +64,7 @@
 
   /* motion time */
   --speed-quick: 0.3s;
-  --speed-normal: 0.5s;
-  --speed-slow: 1s;
+  --speed-normal: 0.6s;
+  --speed-slow: 0.9s;
   --speed-over-slow: 2s;
 }
