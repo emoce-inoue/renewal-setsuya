@@ -22,6 +22,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preload" as="style" fetchpriority="high" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" media="print" onload="this.media='all'" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- GA Google Analytics @ https://m0n.co/ga -->
     <script>
       (function (i, s, o, g, r, a, m) {
@@ -69,28 +70,27 @@
     <!-- End Google Tag Manager for WordPress by gtm4wp.com -->
   </head>
   <body id="body">
-    <header class="l-header">
-      <nav class="l-header__inner">
-        <h1 class="l-header__logo"
-          ><a href=""><img src="images/logo.webp" alt="FINANCIAL AGENCY" /></a
-        ></h1>
+    <header class="l-header l-fixed-item">
+      <nav class="l-header__inner js-fade">
+        <h1 class="l-header__logo">
+          <a href=""><img src="images/logo.webp" width="504" height="50" alt="FINANCIAL AGENCY" /></a>
+        </h1>
         <ul class="l-header__menu-list">
-          <li><a href="" class="l-header__menu-link">お客様の声</a></li>
-          <li><a href="" class="l-header__menu-link">3秒節約プチ体験</a></li>
-          <li><a href="" class="l-header__menu-link">保デジの特徴</a></li>
-          <li><a href="" class="l-header__menu-link">サービスの流れ</a></li>
-          <li><a href="" class="l-header__menu-link">よくある質問</a></li>
-          <li><a href="" class="l-header__menu-link">お問い合わせ</a></li>
+          <li><a href="#voice" class="l-header__menu-link js-menu-link js-scroll-link">お客様の声</a></li>
+          <li><a href="#simulation" class="l-header__menu-link js-menu-link js-scroll-linkk">3秒節約プチ体験</a></li>
+          <li><a href="#flow" class="l-header__menu-link js-menu-link js-scroll-link">サービスの流れ</a></li>
+          <li><a href="#faq" class="l-header__menu-link js-menu-link js-scroll-link">よくある質問</a></li>
+          <li><a href="#contact" class="l-header__menu-link js-menu-link js-scroll-link">お問い合わせ</a></li>
         </ul>
         <ul class="l-header__sns-list">
           <li class="l-header__sns-item">
-            <a href="" class="l-header__sns-link"><img src="images/ig-icon.webp" alt="インスタグラムのアイコン" /></a>
+            <a href="https://www.instagram.com/financialagency_official/" rel="noopener" target="_blank" class="l-header__sns-link"><img src="images/ig-icon.webp" width="55" height="55" alt="インスタグラムのアイコン" /></a>
           </li>
           <li class="l-header__sns-item">
-            <a href="" class="l-header__sns-link"><img src="images/x-icon.webp" alt="X(旧ツイッター)のアイコン" /></a>
+            <a href="https://x.com/FA_hoken" rel="noopener" target="_blank" class="l-header__sns-link"><img src="images/x-icon.webp" width="54" height="55" alt="X(旧ツイッター)のアイコン" /></a>
           </li>
           <li class="l-header__sns-item">
-            <a href="" class="l-header__sns-link"><img src="images/line-icon.webp" alt="LINEのアイコン" /></a>
+            <a href="https://page.line.me/333ucogp?openQrModal=true" rel="noopener" target="_blank" class="l-header__sns-link"><img src="images/line-icon.webp" width="54" height="55" alt="LINEのアイコン" /></a>
           </li>
         </ul>
         <div class="l-header__hamburger">
@@ -101,38 +101,550 @@
       </nav>
       <dialog aria-label="折りたたみメニュー" autofocus="" data-active="false" id="js-drawer" class="l-drawer" open="">
         <div class="l-drawer__header">
-          <p class="l-drawer__logo"><img src="images/logo.webp" alt="FINANCIAL AGENCY" /></p>
+          <p class="l-drawer__logo"><img src="images/logo.webp" width="504" height="50" alt="FINANCIAL AGENCY" /></p>
           <div class="l-drawer__close-button-wrapper"><button type="button" aria-label="メニューを閉じる" class="l-drawer__close-button js-drawer-close"></button></div>
         </div>
-        <a href=""><img src="images/menu-more.webp" alt="3秒「節約」プチ体験 詳しくはこちら" /></a>
+        <a href="#simulation" class="js-menu-link js-scroll-link"><img src="images/menu-more.webp" width="1170" height="396" alt="3秒「節約」プチ体験 詳しくはこちら" /></a>
         <ul class="l-drawer__menu">
-          <li><a href="" class="l-drawer__menu-link">お客様の声</a></li>
-          <li><a href="" class="l-drawer__menu-link">保デジの特徴</a></li>
-          <li><a href="" class="l-drawer__menu-link">サービスの流れ</a></li>
-          <li><a href="" class="l-drawer__menu-link">よくある質問</a></li>
-          <li><a href="" class="l-drawer__menu-link">お問い合わせ</a></li>
+          <li><a href="#voice" class="l-drawer__menu-link js-menu-link js-scroll-link">お客様の声</a></li>
+          <li><a href="#flow" class="l-drawer__menu-link js-menu-link js-scroll-link">サービスの流れ</a></li>
+          <li><a href="#faq" class="l-drawer__menu-link js-menu-link js-scroll-link">よくある質問</a></li>
+          <li><a href="#contact" class="l-drawer__menu-link js-menu-link js-scroll-link">お問い合わせ</a></li>
         </ul>
         <div class="l-drawer__bottom">
           <div class="l-drawer__external">
-            <a href="" class="l-drawer__external-link">企業公式ホームページ</a>
-            <a href="" class="l-drawer__external-link">保険見積もりサービス</a>
+            <a href="https://www.financial-agency.com/" rel="noopener" target="_blank" class="l-drawer__external-link">企業公式ホームページ</a>
+            <a href="https://www.financial-agency.com/service/hodegiweb_at/?partner=hodegiweb_lp&inflow=servicemenu" rel="noopener" target="_blank" class="l-drawer__external-link">保険見積もりサービス</a>
           </div>
           <ul class="l-drawer__sns-list">
             <li class="l-drawer__sns-item">
-              <a href="" class="l-header__sns-link"><img src="images/ig-icon.webp" alt="インスタグラムのアイコン" /></a>
+              <a href="https://www.instagram.com/financialagency_official/" rel="noopener" target="_blank" class="l-header__sns-link"><img src="images/ig-icon.webp" width="55" height="55" alt="インスタグラムのアイコン" /></a>
             </li>
             <li class="l-drawer__sns-item">
-              <a href="" class="l-header__sns-link"><img src="images/x-icon.webp" alt="X(旧ツイッター)のアイコン" /></a>
+              <a href="https://x.com/FA_hoken" rel="noopener" target="_blank" class="l-header__sns-link"><img src="images/x-icon.webp" width="54" height="55" alt="X(旧ツイッター)のアイコン" /></a>
             </li>
             <li class="l-drawer__sns-item">
-              <a href="" class="l-header__sns-link"><img src="images/line-icon.webp" alt="LINEのアイコン" /></a>
+              <a href="https://page.line.me/333ucogp?openQrModal=true" rel="noopener" target="_blank" class="l-header__sns-link"><img src="images/line-icon.webp" width="54" height="55" alt="LINEのアイコン" /></a>
             </li>
           </ul>
           <p class="l-drawer__copy">COPYRIGHT © 2021 FINANCIAL AGENCY. All rights reserved.</p>
         </div>
       </dialog>
     </header>
-    <main class="l-main"> </main>
+    <main class="l-main">
+      <section class="l-mv">
+        <div class="l-mv__inner">
+          <p class="l-mv__emblem js-fade"><img src="images/mv-emblem.webp" width="539" height="220" alt="創業来200万人以上コンサルティング実績" /></p>
+          <h2 class="l-mv__title js-fade"><img src="images/mv-title.webp" width="792" height="341" alt="保険は節約できる ピッタリがわかる" /></h2>
+          <div class="l-mv__figure js-fade"><img src="images/mv-taira.webp" width="906" height="888" alt="フィナンシャル・エージェンシー公式アンバサダー平 愛梨さん" /></div>
+          <div class="l-mv__button-wrapper js-fadeup">
+            <a href="javascript:void(0)" onclick="ChatplusScript.openChat()" class="l-mv__button">
+              <img src="images/cta-button.webp" width="847" height="290" alt="カンタン!1分 保険料の節約額をチェック! チャットでAI見積もり" />
+            </a>
+            <a href="tel:0120407672" class="l-mv__button js-modal-trigger">
+              <img src="images/contact-button.webp" width="672" height="127" alt="今すぐ問い合わせ" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="voice" class="l-section">
+        <div class="l-section__inner l-section__inner--voice">
+          <h3 class="l-section__title l-section__title--voice js-fadeup">
+            <span class="l-section__title-en">Voice</span>
+            <span class="l-section__title-jp">お客様の声</span>
+          </h3>
+          <div class="l-voice__question js-fadeup">
+            <p class="l-voice__question-q">Q</p>
+            <p class="l-voice__question-text">保険料はいくら節約できましたか？</p>
+          </div>
+          <div class="swiper js-fadeup">
+            <ul class="swiper-wrapper l-voice">
+              <li class="swiper-slide l-voice__item">
+                <div class="l-voice__item-top">
+                  <div class="l-voice__property">
+                    <div class="l-voice__icon"><img src="images/age30.webp" alt="30代女性のイラスト" /></div>
+                    <p class="l-voice__age">30代</p>
+                  </div>
+                  <div class="l-voice__saving-text">
+                    <em class="l-voice__saving-large-text">6</em>
+                    <p class="l-voice__saving-middle-text">.2</p>
+                    <p class="l-voice__saving-small-text">万円</p>
+                    <p class="l-voice__saving-normal-text">節約!</p>
+                  </div>
+                </div>
+                <div class="l-voice__insurance-list">
+                  <div class="l-voice__insurance-item">
+                    <p class="l-voice__insurance-title">
+                      年間平均保険料
+                      <sup class="l-voice__mark">※</sup>
+                    </p>
+                    <div class="l-voice__insurance-price">
+                      <em class="l-voice__insurance-large">15</em>
+                      <p class="l-voice__insurance-normal">.1</p>
+                      <p class="l-voice__insurance-yen">万円</p>
+                    </div>
+                  </div>
+                  <div class="l-voice__insurance-item l-voice__insurance-item--red">
+                    <p class="l-voice__insurance-title">
+                      保デジ見積もり
+                      <sup class="l-voice__mark">※</sup>
+                    </p>
+                    <div class="l-voice__insurance-price">
+                      <em class="l-voice__insurance-large">8</em>
+                      <p class="l-voice__insurance-normal">.9</p>
+                      <p class="l-voice__insurance-yen">万円</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide l-voice__item">
+                <div class="l-voice__item-top">
+                  <div class="l-voice__property">
+                    <div class="l-voice__icon"><img src="images/age40.webp" alt="40代男性のイラスト" /></div>
+                    <p class="l-voice__age">40代</p>
+                  </div>
+                  <div class="l-voice__saving-text">
+                    <em class="l-voice__saving-large-text">12</em>
+                    <p class="l-voice__saving-small-text">万円</p>
+                    <p class="l-voice__saving-normal-text">節約!</p>
+                  </div>
+                </div>
+                <div class="l-voice__insurance-list">
+                  <div class="l-voice__insurance-item">
+                    <p class="l-voice__insurance-title">
+                      年間平均保険料
+                      <sup class="l-voice__mark">※</sup>
+                    </p>
+                    <div class="l-voice__insurance-price">
+                      <em class="l-voice__insurance-large">23</em>
+                      <p class="l-voice__insurance-normal">.1</p>
+                      <p class="l-voice__insurance-yen">万円</p>
+                    </div>
+                  </div>
+                  <div class="l-voice__insurance-item l-voice__insurance-item--red">
+                    <p class="l-voice__insurance-title">
+                      保デジ見積もり
+                      <sup class="l-voice__mark">※</sup>
+                    </p>
+                    <div class="l-voice__insurance-price">
+                      <em class="l-voice__insurance-large">11</em>
+                      <p class="l-voice__insurance-normal">.2</p>
+                      <p class="l-voice__insurance-yen">万円</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide l-voice__item">
+                <div class="l-voice__item-top">
+                  <div class="l-voice__property">
+                    <div class="l-voice__icon"><img src="images/age50.webp" alt="50代女性のイラスト" /></div>
+                    <p class="l-voice__age">50代</p>
+                  </div>
+                  <div class="l-voice__saving-text">
+                    <em class="l-voice__saving-large-text">4</em>
+                    <p class="l-voice__saving-middle-text">.9</p>
+                    <p class="l-voice__saving-small-text">万円</p>
+                    <p class="l-voice__saving-normal-text">節約!</p>
+                  </div>
+                </div>
+                <div class="l-voice__insurance-list">
+                  <div class="l-voice__insurance-item">
+                    <p class="l-voice__insurance-title">
+                      年間平均保険料
+                      <sup class="l-voice__mark">※</sup>
+                    </p>
+                    <div class="l-voice__insurance-price">
+                      <em class="l-voice__insurance-large">20</em>
+                      <p class="l-voice__insurance-normal">.6</p>
+                      <p class="l-voice__insurance-yen">万円</p>
+                    </div>
+                  </div>
+                  <div class="l-voice__insurance-item l-voice__insurance-item--red">
+                    <p class="l-voice__insurance-title">
+                      保デジ見積もり
+                      <sup class="l-voice__mark">※</sup>
+                    </p>
+                    <div class="l-voice__insurance-price">
+                      <em class="l-voice__insurance-large">15</em>
+                      <p class="l-voice__insurance-normal">.7</p>
+                      <p class="l-voice__insurance-yen">万円</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="simulation" class="l-section l-section--background">
+        <div class="l-section__inner l-section__inner--simulation js-fadeup">
+          <h3 class="l-section__title l-section__title--simulation"><img src="images/simulation-title.webp" alt="Simulation 3秒「保険の節約」プチ体験" /></h3>
+          <div class="l-simulation">
+            <form id="simulationForm" class="l-simulation__form" action="newActionURL" method="post">
+              <fieldset class="l-simulation__fieldset l-simulation__fieldset--age">
+                <p class="l-simulation__legend">年齢を選択</p>
+                <div class="l-simulation__input-wrapper l-simulation__input-wrapper--select">
+                  <select id="ageSelect" name="age" class="l-simulation__input" required>
+                    <option value="">選択してください</option>
+                    <option value="20">20歳</option>
+                    <option value="21">21歳</option>
+                    <option value="22">22歳</option>
+                    <option value="23">23歳</option>
+                    <option value="24">24歳</option>
+                    <option value="25">25歳</option>
+                    <option value="26">26歳</option>
+                    <option value="27">27歳</option>
+                    <option value="28">28歳</option>
+                    <option value="29">29歳</option>
+                    <option value="30">30歳</option>
+                    <option value="31">31歳</option>
+                    <option value="32">32歳</option>
+                    <option value="33">33歳</option>
+                    <option value="34">34歳</option>
+                    <option value="35">35歳</option>
+                    <option value="36">36歳</option>
+                    <option value="37">37歳</option>
+                    <option value="38">38歳</option>
+                    <option value="39">39歳</option>
+                    <option value="40">40歳</option>
+                    <option value="41">41歳</option>
+                    <option value="42">42歳</option>
+                    <option value="43">43歳</option>
+                    <option value="44">44歳</option>
+                    <option value="45">45歳</option>
+                    <option value="46">46歳</option>
+                    <option value="47">47歳</option>
+                    <option value="48">48歳</option>
+                    <option value="49">49歳</option>
+                    <option value="50">50歳</option>
+                    <option value="51">51歳</option>
+                    <option value="52">52歳</option>
+                    <option value="53">53歳</option>
+                    <option value="54">54歳</option>
+                    <option value="55">55歳</option>
+                    <option value="56">56歳</option>
+                    <option value="57">57歳</option>
+                    <option value="58">58歳</option>
+                    <option value="59">59歳</option>
+                    <option value="60">60歳</option>
+                    <option value="61">61歳</option>
+                    <option value="62">62歳</option>
+                    <option value="63">63歳</option>
+                    <option value="64">64歳</option>
+                    <option value="65">65歳</option>
+                    <option value="66">66歳</option>
+                    <option value="67">67歳</option>
+                    <option value="68">68歳</option>
+                    <option value="69">69歳</option>
+                  </select>
+                </div>
+              </fieldset>
+
+              <fieldset class="l-simulation__fieldset l-simulation__fieldset--gender">
+                <p class="l-simulation__legend">性別を選択</p>
+                <div class="l-simulation__input-wrapper l-simulation__input-wrapper--gender">
+                  <label class="l-simulation__input l-simulation__input--gender">
+                    <input type="radio" name="gender" value="male" class="l-simulation__input-radio" required />
+                    <span class="l-simulation__icon l-simulation__icon--male"><img src="images/icon-men.webp" alt="せつやくんのアイコン" /></span>
+                    男性
+                  </label>
+                  <label class="l-simulation__input l-simulation__input--gender">
+                    <input type="radio" name="gender" value="female" class="l-simulation__input-radio" required />
+                    <span class="l-simulation__icon l-simulation__icon--female"><img src="images/icon-woman.webp" alt="せつこちゃんのアイコン" /></span>
+                    女性
+                  </label>
+                </div>
+              </fieldset>
+
+              <div class="l-simulation__submit-wrapper">
+                <button type="submit" class="l-simulation__submit-button">結果を見る</button>
+              </div>
+            </form>
+          </div>
+
+          <div>
+            <p class="l-caution">
+              ※見積もり体験で表示されているプランは保障内容の一部です。
+              <br />
+              ※告知などによってプラン内容が異なる場合がございます。
+              <br />
+              ※見積もり結果の保険料と平均の年間保険料について、保障内容が類似しているとは限りませんので、節約できる金額については目安としていただく数値です。お客様におかれましては、保険料以外の契約条件も十分にご検討下さい。
+              <br />
+              ※記載されている年間平均保険料は『生命保険文化センター調査報告令和元年度「生活保障に関する調査」（令和元年12月発行）』から引用しています。上記の統計に含まれる保険種類については当社では分かりかねます。
+              <br />
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="point" class="l-section">
+        <div class="l-section__inner l-section__inner--point">
+          <h3 class="l-section__title l-section__title--point js-fadeup">
+            <span class="l-section__title-en l-section__title-en--point">Point</span>
+            <span class="l-section__title-jp l-section__title-jp--point">３つのポイント</span>
+          </h3>
+          <div class="l-point">
+            <p class="l-point__text js-fadeup">ピッタリな保険がすぐにわかる！</p>
+            <ul class="l-point__list">
+              <li class="l-point__list-item js-fadeup">
+                <p class="l-point__circle">
+                  豊富な
+                  <br />
+                  プラン
+                  <br />
+                  <span class="l-point__yellow-text l-point__tight-text">
+                    <small class="l-point__small-text">約</small>
+                    3,500!!*
+                  </span>
+                </p>
+                <div class="l-point__contents l-point__contents--plan">
+                  <div class="l-point__image-wrapper l-point__image-wrapper--plan">
+                    <div class="l-point__contents-image l-point__contents-image--plan"><img src="images/point-plan.webp" alt="プランを選んでいる男性のイラスト" /></div>
+                  </div>
+                  <p class="l-point__contents-text">
+                    保険代理店だからできる
+                    <br />
+                    充実のラインナップであなたに
+                    <br />
+                    ピッタリを提案！
+                  </p>
+                </div>
+                <p class="l-point__comment">＊FAの募集人よりご案内をした場合</p>
+              </li>
+              <li class="l-point__list-item js-fadeup">
+                <p class="l-point__circle">
+                  <span>
+                    <span class="l-point__yellow-text">AI</span>
+                    が
+                  </span>
+                  瞬時に
+                  <br />
+                  セレクト
+                </p>
+                <div class="l-point__contents l-point__contents--select">
+                  <div class="l-point__image-wrapper l-point__image-wrapper--select">
+                    <div class="l-point__contents-image l-point__contents-image--select"><img src="images/point-select.webp" alt="スマホを見ている男性のイラスト" /></div>
+                  </div>
+                  <p class="l-point__contents-text l-point__contents-text--small">
+                    チャットでカンタンな
+                    <br />
+                    質問に答えるだけでAIが
+                    <br />
+                    最適なプランをスグに導く！
+                    <br />
+                  </p>
+                </div>
+              </li>
+              <li class="l-point__list-item js-fadeup">
+                <p class="l-point__circle">
+                  何度でも
+                  <span class="l-point__yellow-text">無料</span>
+                </p>
+                <div class="l-point__contents l-point__contents--saving">
+                  <div class="l-point__image-wrapper l-point__image-wrapper--saving">
+                    <div class="l-point__contents-image l-point__contents-image--saving"><img src="images/point-saving.webp" alt="家族で無料診断しているイラスト" /></div>
+                  </div>
+                  <p class="l-point__contents-text">
+                    家族みんなの保険も
+                    <br class="no-pc" />
+                    まとめて
+                    <br class="no-sp" />
+                    無料で節約診断！
+                    <br />
+                    将来の見通しも立てられる
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="flow" class="l-section">
+        <div class="l-section__inner l-section__inner--flow">
+          <h3 class="l-section__title l-section__title--flow js-fadeup">
+            <span class="l-section__title-en l-section__title-en--flow">Flow</span>
+            <span class="l-section__title-jp l-section__title-jp--flow">サービスの流れ</span>
+          </h3>
+          <div class="l-flow js-fadeup">
+            <ul class="l-flow__list">
+              <li class="l-flow__item">
+                <div class="l-flow__item-image"><img src="images/comment.webp" alt="吹き出しのアイコン" /></div>
+                <div class="l-flow__item-text-wrapper">
+                  <p class="l-flow__item-number l-flow__item-number--first">01</p>
+                  <p class="l-flow__item-text">チャットでAI見積もり</p>
+                </div>
+              </li>
+              <li class="l-flow__item">
+                <div class="l-flow__item-image"><img src="images/check.webp" alt="資料と虫眼鏡のアイコン" /></div>
+                <div class="l-flow__item-text-wrapper">
+                  <p class="l-flow__item-number">02</p>
+                  <p class="l-flow__item-text">見積書を確認</p>
+                </div>
+              </li>
+              <li class="l-flow__item">
+                <div class="l-flow__item-image"><img src="images/support.webp" alt="サポートする女性のアイコン" /></div>
+                <div class="l-flow__item-text-wrapper">
+                  <p class="l-flow__item-number">03</p>
+                  <p class="l-flow__item-text">手厚くサポート</p>
+                </div>
+              </li>
+            </ul>
+            <p class="l-flow__comment">※必要に応じて見積書送付より先にお電話を差し上げる場合がございます。</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="l-section">
+        <div class="l-section__inner l-section__inner--faq">
+          <h3 class="l-section__title l-section__title--faq js-fadeup">
+            <span class="l-section__title-en l-section__title-en--faq">FAQ</span>
+            <span class="l-section__title-jp l-section__title-jp--faq">よくある質問</span>
+          </h3>
+          <div class="l-faq js-fadeup">
+            <details class="l-faq__accordion" open>
+              <summary class="l-faq__summary">
+                <p class="l-faq__summary-q">Q</p>
+                <p class="l-faq__summary-text">サービスを受けたら保険契約しなきゃダメでしょ？</p>
+              </summary>
+              <div class="l-faq__answer">
+                <p class="l-faq__answer-a">A</p>
+                <p class="l-faq__answer-text">
+                  いいえ。当サービスは、あくまでもお客様にとって必要な保険を知っていただく為のサービスです。現在のプランが適切かどうかを判断していただく為にお気軽にご利用いただけます。
+                  <br />
+                  また、その結果がお客様にとって総合的にプラスとなる事、かつお客様のご意向がある場合は、新しいプランのご検討もいただける体制は整っておりますので、ご希望があればお申し付けください。
+                </p>
+              </div>
+            </details>
+            <details class="l-faq__accordion">
+              <summary class="l-faq__summary">
+                <p class="l-faq__summary-q">Q</p>
+                <p class="l-faq__summary-text">見積もり体験で出た結果のプランに入ることも可能？</p>
+              </summary>
+              <div class="l-faq__answer">
+                <p class="l-faq__answer-a">A</p>
+                <p class="l-faq__answer-text">はい、審査次第ですがご案内可能です。また誕生月や告知によって保険料が変わる可能性もございます。</p>
+              </div>
+            </details>
+            <details class="l-faq__accordion">
+              <summary class="l-faq__summary">
+                <p class="l-faq__summary-q">Q</p>
+                <p class="l-faq__summary-text">健康告知に心配があるんですが…</p>
+              </summary>
+              <div class="l-faq__answer">
+                <p class="l-faq__answer-a">A</p>
+                <p class="l-faq__answer-text">告知の内容によって商品の選択肢は異なりますが、当社がご案内できる3,500以上のプランの中でご案内できる商品も絞ることができるので、まずはどんな商品があるかだけでもご覧になってみてください！</p>
+              </div>
+            </details>
+            <details class="l-faq__accordion">
+              <summary class="l-faq__summary">
+                <p class="l-faq__summary-q">Q</p>
+                <p class="l-faq__summary-text">直接聞ける窓口はないの？</p>
+              </summary>
+              <div class="l-faq__answer">
+                <p class="l-faq__answer-a">A</p>
+                <p class="l-faq__answer-text">
+                  当社は店舗型ではありませんが、ご自宅やお近くのカフェにて直接ご案内することも可能です。また、LINEでファイナンシャルプランナーに無料で聞くことも可能ですので、LINEをご希望の場合は
+                  <a href="https://page.line.me/333ucogp?openQrModal=true" target="_blank" rel="noopener" class="l-faq__answer-link">コチラ</a>
+                  から友達登録されてからご相談ください。
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="l-section">
+        <div class="l-section__inner l-section__inner--contact">
+          <h3 class="l-section__title l-section__title--contanct js-fadeup">
+            <span class="l-section__title-en l-section__title-en--contanct">Contact</span>
+            <span class="l-section__title-jp l-section__title-jp--contanct">お問い合わせ</span>
+          </h3>
+          <div class="l-contact-wrapper js-fadeup">
+            <div class="l-contact">
+              <a href="https://www.financial-agency.com/" rel="noopener" target="_blank" class="l-contact__link-button">
+                <div>
+                  <p class="l-contact__link-text">企業公式ホームページ</p>
+                  <p class="l-contact__link-logo"><img src="images/logo.webp" width="504" height="50" alt="FINANCIAL AGENCY" /></p>
+                </div>
+              </a>
+              <a href="tel:0120-407-672" class="l-contact__tel-button js-modal-trigger">
+                <div class="l-contact__tel-icon"><img src="images/tel.webp" alt="電話のアイコン" /></div>
+                <div class="l-contact__business-hours">
+                  <p class="l-contact__tel">0120-407-672</p>
+                  <p class="l-contact__receipt">
+                    <span>受付時間</span>
+                    <span>平日</span>
+                    <em class="l-contact__time">9:30-19:00</em>
+                  </p>
+                </div>
+              </a>
+            </div>
+            <ul class="l-sns">
+              <li class="l-sns__item">
+                <a href="https://www.instagram.com/financialagency_official/" rel="noopener" target="_blank"><img src="images/ig-icon-footer.webp" width="55" height="55" alt="インスタグラムのアイコン" /></a>
+              </li>
+              <li class="l-sns__item">
+                <a href="https://x.com/FA_hoken" rel="noopener" target="_blank"><img src="images/x-icon-footer.webp" width="54" height="55" alt="X(旧ツイッター)のアイコン" /></a>
+              </li>
+              <li class="l-sns__item">
+                <a href="https://page.line.me/333ucogp?openQrModal=true" rel="noopener" target="_blank"><img src="images/line-icon-footer.webp" width="54" height="55" alt="LINEのアイコン" /></a>
+              </li>
+            </ul>
+            <a href="https://www.financial-agency.com/lp/setsuya_setsuko/" rel="noopener" target="_blank" class="l-link-banner">
+              <picture>
+                <source media="(min-width:768px)" srcset="images/intro-pc.webp" />
+                <img src="images/intro.webp" width="650" height="314" alt="みなおしヒーロー せつやくん&せつこちゃん キャラクター紹介" />
+              </picture>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <div class="l-page-top js-fade">
+        <a href="#" class="l-page-top__button"><img src="images/top-arrow.webp" width="94" height="98" alt="トップへ戻るボタン" /></a>
+      </div>
+
+      <div class="l-fixed-cta">
+        <a href="javascript:void(0)" onclick="ChatplusScript.openChat()" class="l-fixed-cta__button">
+          <picture>
+            <source media="(min-width:768px)" srcset="images/cta-button-pc.webp" />
+            <img src="images/cta-button.webp" width="604" height="213" alt="カンタン1分 保険料の節約額をチェック！ チャットでできるAI見積もり" />
+          </picture>
+        </a>
+      </div>
+
+      <footer class="l-footer js-fade">
+        <div class="l-footer__inner">
+          <div class="l-footer__link-wrapper">
+            <p>関連リンク</p>
+            <ul class="l-footer__link">
+              <li><a href="https://www.financial-agency.com/service/nowadays/insurance/" rel="noopener" target="_blank">保険について</a></li>
+              <li><a href="https://www.financial-agency.com/service/nowadays/follow/" rel="noopener" target="_blank">他サービスについて</a></li>
+              <li><a href="https://www.financial-agency.com/service/uninsured/" rel="noopener" target="_blank">初めて保険を検討中の方</a></li>
+            </ul>
+          </div>
+          <p class="l-footer__copyright">COPYRIGHT &copy; 2021 FINANCIAL AGENCY. All rights reserved.</p>
+        </div>
+      </footer>
+
+      <div id="modal" class="l-modal">
+        <div class="l-modal__inner">
+          <div class="l-modal__close"><img src="images/close-button.webp" width="60" height="60" alt="閉じるボタン" /></div>
+          <p class="l-modal__text">お問い合わせ先はこちら</p>
+          <div class="l-modal__tel">
+            <div class="l-modal__tel-icon"><img src="images/tel.webp" alt="電話のアイコン" /></div>
+            <p class="l-modal__tel-number">0120-407-672</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- ChatBot START -->
     <script>
       (function () {
